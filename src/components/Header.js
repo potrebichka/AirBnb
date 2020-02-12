@@ -5,7 +5,7 @@ import React from 'react';
 function Header(){
   return (
     <div id="header">
-        <style jsx>{`
+      <style jsx>{`
             #header {
                 background: url(https://a0.muscache.com/4ea/air/r:w3100-h2074-sfit,e:fjpg-c80/pictures/0ffd8594-f123-43f0-85bb-7ef88c6f0624.jpg) no-repeat center center;
                 background-size: cover;
@@ -93,34 +93,34 @@ function Header(){
             }
 
         `}</style>
-        <div className="nav">
-            <span>Log in</span>
-            <span>Sign up</span>
-            <span>Help</span>
-            <span>Host an experience</span>
-            <span>Host a home</span>
-            <span>$ USD</span>
-            <span>English(US)</span>
+      <div className="nav">
+        <span>Log in</span>
+        <span>Sign up</span>
+        <span>Help</span>
+        <span>Host an experience</span>
+        <span>Host a home</span>
+        <span>$ USD</span>
+        <span>English(US)</span>
+      </div>
+      <div className="booking-box">
+        <h2>Book unique places to stay and things to do.</h2>
+        <div>
+          <label for="where_input">WHERE</label><br/>
+          <input id="where_input" placeholder="Anywhere"></input>
         </div>
-        <div className="booking-box">
-            <h2>Book unique places to stay and things to do.</h2>
-            <div>
-                <label for="where_input">WHERE</label><br/>
-                <input id="where_input" placeholder="Anywhere"></input>
-            </div>
-            <div>
-                <label for="checkin_input">CHECK-IN</label>
-                <label for="checkout_input" id="checkout_label">CHECKOUT</label><br/>
-                <input id="checkin_input" placeholder="mm/dd/yyy"></input>
-                <input id="checkout_input" placeholder="mm/dd/yyyy"></input>
-            </div>
-            <div>
-                <label for="guests_input">GUESTS</label><br/>
-                <input id="guests_input" type="number"placeholder="Guests"></input>
-            </div>
-            <button className="red_button">Search</button>
+        <div>
+          <label for="checkin_input">CHECK-IN</label>
+          <label for="checkout_input" id="checkout_label">CHECKOUT</label><br/>
+          <input id="checkin_input" placeholder="mm/dd/yyy"></input>
+          <input id="checkout_input" placeholder="mm/dd/yyyy"></input>
         </div>
-        <a>Over 300 unique places to stay in Oregon</a>
+        <div>
+          <label for="guests_input">GUESTS</label><br/>
+          <input id="guests_input" type="number"placeholder="Guests"></input>
+        </div>
+        <button className="red_button">Search</button>
+      </div>
+      <a>Over 300 unique places to stay in Oregon</a>
     </div>
 
   );
